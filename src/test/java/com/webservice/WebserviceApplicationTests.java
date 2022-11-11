@@ -11,6 +11,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 单元测试
+ * http://soa.joyoung.com/gateway/export/BusinessCenterService?wsdl
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = WebserviceApplication.class)
 public class WebserviceApplicationTests {
@@ -22,6 +26,7 @@ public class WebserviceApplicationTests {
     @Test
     public void contextLoads() {
     }
+
 
 
     @Test
