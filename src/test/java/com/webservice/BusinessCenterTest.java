@@ -2,7 +2,6 @@ package com.webservice;
 
 import com.alibaba.fastjson.JSON;
 import com.webservice.consumer.business.BusinessCenterService;
-import com.webservice.consumer.demo.ServiceDemoImplService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,27 +12,19 @@ import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = WebserviceApplication.class)
-public class WebserviceApplicationTests {
+public class BusinessCenterTest {
+
 
     @Resource
-    private ServiceDemoImplService serviceDemoImplService;
+    private BusinessCenterService businessCenterService;
+
 
 
     @Test
-    public void contextLoads() {
+    public void business(){
+        List<String> strings = businessCenterService.getBusinessCenterServicePort().callService("", "", "", "",
+                "", "", "");
+        System.out.printf(JSON.toJSONString(strings));
+
     }
-
-
-    @Test
-    public void demoTest() {
-        String test = serviceDemoImplService.getTestServiceDemoPort().test("张三");
-        System.out.println(test);
-    }
-
-
-
-
-
-
-
 }

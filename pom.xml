@@ -88,12 +88,12 @@
                 <configuration>
                     <!--生成客户端代码的包路径-->
                     <packageName>
-                        com.webservice.consumer.demo
+                        com.webservice.consumer.business
                     </packageName>
                     <wsdlUrls>
                         <!--服务端提供的接口地址-->
-                        <wsdlUrl>http://127.0.0.1:8080/services/ws/api?wsdl</wsdlUrl>
-<!--                        <wsdlUrl>http://soa.joyoung.com/gateway/export/BusinessCenterService?wsdl</wsdlUrl>-->
+<!--                        <wsdlUrl>http://127.0.0.1:8080/services/ws/api?wsdl</wsdlUrl>-->
+                        <wsdlUrl>http://soa.joyoung.com/gateway/export/BusinessCenterService?wsdl</wsdlUrl>
                     </wsdlUrls>
                     <wsdlFiles>
 <!--                        <wsdlFile>-->

@@ -1,5 +1,6 @@
 package com.webservice.config;
 
+import com.webservice.consumer.business.BusinessCenterService;
 import com.webservice.consumer.demo.ServiceDemoImplService;
 import com.webservice.provider.demo.ServiceDemo;
 import org.apache.cxf.Bus;
@@ -46,9 +47,14 @@ public class WebServiceConfiguration {
      * 所有的客户端实现接口都要注入
      * @return
      */
-    @Bean
-    public ServiceDemoImplService serviceDemoImplService(){
-        return new ServiceDemoImplService();
-    }
+//    @Bean
+//    public ServiceDemoImplService serviceDemoImplService(){
+//        return new ServiceDemoImplService();
+//    }
 
+
+    @Bean
+    public BusinessCenterService businessCenterService(){
+        return new BusinessCenterService();
+    }
 }
